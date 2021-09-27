@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+* {
+    text-align: center;
+    color: #191f2f;
+    font-family: "Patrick Hand", cursive, sans-serif;
+    font-size: 30px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #c4ddd8;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+#navbar li {
+    list-style: none;
+    margin-right: 5em;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    border-top: 3px solid #191f2f;
+    border-bottom: 3px solid #191f2f;
+    padding: 6px 0;
+}
+
+#welcome-section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #c4ddd8;
+}
+
+#welcome-section h1 {
+    font-size: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-section p {
+    margin: 0;
+    padding: 0;
+}
+
+#projects {
+    background-color: #f3ce69;
+    padding: 1em;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}
+
+.project-tile {
+    padding: 1em;
+}
+
+.project-tile p {
+    background-color: #efecda;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+#contact {
+    background-color: #f3c5b9;
+    padding: 0.2em 0em 1.5em 0em;
+    margin: 0;
+}
+
+#contact-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-info a {
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    border-bottom: 3px solid #191f2f;
+}
+
+#contact-info img {
+    width: 50px;
+    position: relative;
+    top: 15px;
+}
+
+@media screen and (max-width: 769px) {
+    #navbar ul {
+        justify-content: center;
+    }
+    #navbar li {
+        margin: 0em 1.5em 0em 1.5em;
+    }
+    .project-container {
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navbar ul {
+        flex-flow: column wrap;
+    }
+    #contact-info {
+        flex-flow: column wrap;
+    }
+}
